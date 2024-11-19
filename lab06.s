@@ -14,8 +14,9 @@ l3: lw   x5,  0(x10)
 l4: beq  x5,  x9, out 
 l5: add  x5,  x5, x5 
 l6: sw   x5,  0(x10) 
-l7: j    loop 
+l7: j   out 
 out: 
+j loop
 l8: addi x17, x0, 10
 l9: ecall
 
